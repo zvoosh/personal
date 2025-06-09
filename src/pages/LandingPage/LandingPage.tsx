@@ -82,7 +82,7 @@ const LandingPage = () => {
               />
             </div>
             <div className="text-container">
-              <p className="font-14 line-height-18 letter-spacing">
+              <p className="font-14 line-height-18 letter-spacing text-font">
                 Informatics graduate passionate about web development. During third year of university I worked as
                 a Software Developer 1 at FactoryWW for a year, then expanded
                 skills through courses in Angular, Flask, React, and more.
