@@ -1,0 +1,46 @@
+.bg {
+  &-black {
+    background-color: #282725;
+  }
+  &-white {
+    background-color: #ffffff;
+  }
+  &-red {
+    background-color: rgb(255, 0, 0);
+  }
+  &-blue {
+    background-color: blue;
+  }
+  &-yellow {
+    background-color: yellow;
+  }
+  &-green {
+    background-color: #36935D;
+  }
+  &-gray {
+    background-color: #ABABAB;
+  }
+}
+.text {
+  &-black {
+    color: #000000;
+  }
+  &-white {
+    color: white;
+  }
+  &-red {
+    color: red;
+  }
+  &-blue {
+    color: blue;
+  }
+  &-yellow {
+    color: #dfff56;
+  }
+  &-green {
+    color: #36935D;
+  }
+  &-gray {
+    color: #ABABAB;
+  }
+}

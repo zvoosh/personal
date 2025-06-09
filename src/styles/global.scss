@@ -1,0 +1,28 @@
+.cover{
+    object-fit: cover;
+}
+.text-center{
+    text-align: center;
+}
+.border-20{
+    border-radius: 20%;
+}
+.border-10{
+    border-radius: 10%;
+}
+
+.scale-15{
+    transform: scale(1.5);
+}
+
+.text-justify{
+    text-align: justify;
+}
+.line-height{
+    &-18{
+        line-height: 1.8rem;
+    }
+}
+.letter-spacing{
+    letter-spacing: .05rem;
+}
