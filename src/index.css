@@ -15,3 +15,16 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+::-webkit-scrollbar {
+  width: 6px; /* Adjust for thinness */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 3px; /* Smooth edges */
+}
