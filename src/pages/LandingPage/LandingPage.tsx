@@ -7,7 +7,6 @@ import hotel from "../../assets/hotel.png";
 import { SiJavascript, SiTypescript } from "react-icons/si";
 import { BiLogoFlask } from "react-icons/bi";
 import { RiNextjsFill } from "react-icons/ri";
-import { Divider } from "antd";
 
 const expirianceData = [
   {
@@ -63,7 +62,7 @@ const skillData = [
 const LandingPage = () => {
   return (
     <div className="w-100 h-100 flex justify-center p-3 pt-2 text-white font-space">
-      <div className="w-50">
+      <div className="container">
         <div className="pt-5">
           <p className="font-gaming font-30 text-yellow">
             Hello my name is Dusan
@@ -74,24 +73,21 @@ const LandingPage = () => {
         </div>
         <div className="w-100 mt-5">
           <p className="font-gaming font-14 letter-spacing">About me</p>
-          <div className="flex mt-2">
-            <div className="w-25">
+          <div className="about-me-container">
+            <div className="image-container">
               <img
                 src={portfolioImage}
                 alt="Profile image"
                 className="w-100 h-100 cover"
               />
             </div>
-            <div className="w-75 ml-4 flex align-center justify-center text-justify">
+            <div className="text-container">
               <p className="font-14 line-height-18 letter-spacing">
-                Graduated Informatics student with a passion for Web
-                development. I worked as a Software Developer I at FactoryWW for
-                a year, after that I spent time educating myself with various
-                courses like Angular, Flask, React etc. During my time at
-                University of Singidunum I’ve grown custom to working in
-                different programming languages and frameworks at the same time.
-                Other then web programming I am very interested in Data Science
-                and AI.
+                Informatics graduate passionate about web development. During third year of university I worked as
+                a Software Developer 1 at FactoryWW for a year, then expanded
+                skills through courses in Angular, Flask, React, and more.
+                Experienced in multiple programming languages and frameworks.
+                Also interested in Data Science and AI.
               </p>
             </div>
           </div>
@@ -112,12 +108,11 @@ const LandingPage = () => {
           </div>
         </div>
         <div className="w-100 mt-5">
-          <p className="font-gaming font-14">Work expiriance</p>
+          <p className="font-gaming font-14">Portfolio</p>
           <div className="w-100 mt-2">
             {expirianceData.map((values, index) => (
               <div>
-                {/* <Divider className="bg-white m-2"/> */}
-                <ExpirianceCard src={values.src}  key={index} />
+                <ExpirianceCard src={values.src} key={index} />
               </div>
             ))}
           </div>

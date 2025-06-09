@@ -1,0 +1,134 @@
+@media (max-width: 479px) {
+  .container {
+    width: 100%;
+    padding-right: 5rem;
+  }
+  .image-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .text-container {
+    width: 100%;
+    padding-left: 0rem;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+  }
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 100%;
+    padding-right: 5rem;
+  }
+  .image-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .text-container {
+    width: 100%;
+    padding-left: 0rem;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .image-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .text-container {
+    width: 100%;
+    padding-left: 0rem;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  .image-container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+  .text-container {
+    width: 75%;
+    padding-left: 4rem;
+    padding-top: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    width: 1300px;
+  }
+  .image-container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+  .text-container {
+    width: 75%;
+    padding-left: 4rem;
+    padding-top: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+  }
+}
