@@ -11,9 +11,11 @@ import { RiNextjsFill } from "react-icons/ri";
 const expirianceData = [
   {
     src: vaco,
+    href: "https://zvoosh.github.io/vaco/"
   },
   {
     src: china,
+    href: "https://zvoosh.github.io/Chinese-Cultural-Evolution/"
   },
   {
     src: hotel,
@@ -63,7 +65,7 @@ const LandingPage = () => {
   return (
     <div className="w-100 h-100 flex justify-center p-3 pt-2 text-white font-space">
       <div className="container">
-        <div className="pt-5">
+        <div className="hello-padding">
           <p className="font-gaming font-30 text-yellow">
             Hello my name is Dusan
           </p>
@@ -112,7 +114,9 @@ const LandingPage = () => {
           <div className="w-100 mt-2">
             {expirianceData.map((values, index) => (
               <div>
+                <a href={values.href} target="_blank">
                 <ExpirianceCard src={values.src} key={index} />
+                </a>
               </div>
             ))}
           </div>
