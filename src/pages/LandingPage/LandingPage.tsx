@@ -11,11 +11,11 @@ import { RiNextjsFill } from "react-icons/ri";
 const expirianceData = [
   {
     src: vaco,
-    href: "https://zvoosh.github.io/vaco/"
+    href: "https://zvoosh.github.io/vaco/",
   },
   {
     src: china,
-    href: "https://zvoosh.github.io/Chinese-Cultural-Evolution/"
+    href: "https://zvoosh.github.io/Chinese-Cultural-Evolution/",
   },
   {
     src: hotel,
@@ -78,6 +78,7 @@ const LandingPage = () => {
           <div className="about-me-container">
             <div className="image-container">
               <img
+                loading="eager"
                 src={portfolioImage}
                 alt="Profile image"
                 className="w-100 h-100 cover"
@@ -85,11 +86,12 @@ const LandingPage = () => {
             </div>
             <div className="text-container">
               <p className="font-14 line-height-18 letter-spacing text-font">
-                Informatics graduate passionate about web development. During third year of university I worked as
-                a Software Developer 1 at FactoryWW for a year, then expanded
-                skills through courses in Angular, Flask, React, and more.
-                Experienced in multiple programming languages and frameworks.
-                Also interested in Data Science and AI.
+                Informatics graduate passionate about web development. During
+                third year of university I worked as a Software Developer 1 at
+                FactoryWW for a year, then expanded skills through courses in
+                Angular, Flask, React, and more. Experienced in multiple
+                programming languages and frameworks. Also interested in Data
+                Science and AI.
               </p>
             </div>
           </div>
@@ -115,7 +117,7 @@ const LandingPage = () => {
             {expirianceData.map((values, index) => (
               <div>
                 <a href={values.href} target="_blank">
-                <ExpirianceCard src={values.src} key={index} />
+                  <ExpirianceCard src={values.src} key={index} />
                 </a>
               </div>
             ))}
