@@ -3,23 +3,30 @@ import { ExpirianceCard, SkillCard } from "../../components";
 import portfolioImage from "../../assets/DusanIlicPortfolioImage.jpg";
 import vaco from "../../assets/vaco.png";
 import china from "../../assets/china.png";
+import cards from "../../assets/cards.png";
+import phots from "../../assets/phots.png";
 import hotel from "../../assets/hotel.png";
 import { SiJavascript, SiTypescript } from "react-icons/si";
 import { BiLogoFlask } from "react-icons/bi";
 import { RiNextjsFill } from "react-icons/ri";
+import { Carousel } from "antd";
 
 const expirianceData = [
   {
     src: vaco,
-    href: "https://zvoosh.github.io/vaco/",
   },
   {
-    src: china,
-    href: "https://zvoosh.github.io/Chinese-Cultural-Evolution/",
+    src: cards,
   },
   {
-    src: hotel,
+    src: phots,
   },
+  // {
+  //   src: china,
+  // },
+  // {
+  //   src: hotel,
+  // },
 ];
 
 const skillData = [
@@ -114,13 +121,11 @@ const LandingPage = () => {
         <div className="w-100 mt-5">
           <p className="font-gaming font-14">Portfolio</p>
           <div className="w-100 mt-2">
-            {expirianceData.map((values, index) => (
-              <div>
-                <a href={values.href} target="_blank">
-                  <ExpirianceCard src={values.src} key={index} />
-                </a>
-              </div>
-            ))}
+            <Carousel autoplay arrows className="pl-3 pr-3" dots={false}>
+              {expirianceData.map((values, index) => (
+                <ExpirianceCard src={values.src} key={index} />
+              ))}
+            </Carousel>
           </div>
         </div>
       </div>
