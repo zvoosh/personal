@@ -6,7 +6,7 @@ import { LandingPage } from "./pages";
 
 function App() {
   return (
-    <BrowserRouter basename="/personal/">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<RootLayout />}>
           <Route index element={<LandingPage />} />

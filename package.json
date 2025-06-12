@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "rsync -av dist/ /home/u846067133/public_html/"
+    "deploy": "rsync -avz -e 'ssh -p 65002' dist/ u846067133@dusanilicportfolio.dusanprogram.eu:/home/u846067133/public_html/"
   },
   "dependencies": {
     "antd": "^5.25.4",
