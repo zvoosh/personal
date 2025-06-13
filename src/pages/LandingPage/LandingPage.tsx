@@ -68,7 +68,7 @@ const skillData = [
 
 const LandingPage = () => {
   return (
-    <div className="w-100 h-100 flex justify-center p-3 pt-2 text-white font-space">
+    <div className="w-100 h-100 flex justify-center  pt-2 text-white font-space">
       <div className="container">
         <div className="hello-padding">
           <p className="font-gaming font-30 text-yellow">
@@ -79,7 +79,9 @@ const LandingPage = () => {
           </p>
         </div>
         <div className="w-100 mt-5">
-          <p className="font-gaming font-14 letter-spacing">About me</p>
+          <p className="font-gaming font-14 letter-spacing aboutme-padding">
+            About me
+          </p>
           <div className="about-me-container">
             <div className="image-container">
               <img
@@ -101,8 +103,8 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="w-100 mt-5">
-          <p>Skills</p>
+        <div className="w-100 mt-5 skills-padding">
+          <div>Skills</div>
           <div
             className="mt-2"
             style={{
@@ -117,7 +119,9 @@ const LandingPage = () => {
           </div>
         </div>
         <div className="w-100 mt-5">
-          <p className="font-gaming font-14">Portfolio</p>
+          <p className="font-gaming font-14 portfolio-padding-title">
+            Portfolio
+          </p>
           <div className="w-100 mt-2">
             <Carousel autoplay arrows className="pl-3 pr-3" dots={false}>
               {expirianceData.map((values, index) => (

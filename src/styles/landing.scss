@@ -1,10 +1,12 @@
 @media (max-width: 479px) {
   .container {
     width: 100%;
-    padding-right: 5rem;
   }
   .hello-padding{ 
-    padding: 0rem
+    padding: 2rem;
+  }
+  .aboutme-padding{
+    padding: 0rem 1rem;
   }
   .image-container {
     width: 100%;
@@ -17,11 +19,10 @@
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
+    padding: 1rem;
   }
   .text-container {
     width: 100%;
-    padding-left: 0rem;
-    padding-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +30,14 @@
   }
   .text-font {
     font-size: 1rem;
-    letter-spacing: 0rem;
+    padding : 2rem 0rem 0rem 0rem;
+    text-align: start;
+  }
+  .skills-padding{
+    padding: 0rem 2rem;
+  }
+  .portfolio-padding-title{
+    text-align: center;
   }
 }
 
