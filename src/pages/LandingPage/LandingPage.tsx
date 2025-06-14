@@ -1,6 +1,6 @@
 import { FaAngular, FaJava, FaNodeJs, FaPython, FaReact } from "react-icons/fa";
 import { ExpirianceCard, SkillCard } from "../../components";
-import portfolioImage from "../../assets/DusanIlicPortfolioImage.jpg";
+import portfolioImage from "../../assets/Dusan Ilic CV.jpeg";
 import vaco from "../../assets/vaco.png";
 import cards from "../../assets/cards.png";
 import phots from "../../assets/phots.png";
