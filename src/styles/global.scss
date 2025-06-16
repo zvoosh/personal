@@ -15,6 +15,10 @@
     transform: scale(1.5);
 }
 
+.scale-25{
+    transform: scale(2.5);
+}
+
 .text-justify{
     text-align: justify;
 }
@@ -25,4 +29,8 @@
 }
 .letter-spacing{
     letter-spacing: .05rem;
+}
+
+.user-none{
+    user-select: none;
 }
