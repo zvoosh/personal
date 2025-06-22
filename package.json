@@ -13,7 +13,9 @@
     "deploy": "rsync -avz -e 'ssh -p 65002' dist/ u846067133@dusanilicportfolio.dusanprogram.eu:/home/u846067133/public_html/"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "antd": "^5.25.4",
+    "emailjs-com": "^3.2.0",
     "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
