@@ -19,7 +19,7 @@ import { useState } from "react";
 import { HiOutlineSquare3Stack3D } from "react-icons/hi2";
 import { FaMobileScreen } from "react-icons/fa6";
 import { IoLocationSharp } from "react-icons/io5";
-import { Button, Col, Form, Input, message, Row } from "antd";
+import { Button, Col, Form, Input, notification, Row } from "antd";
 import TextArea from "antd/es/input/TextArea";
 import { useForm } from "antd/es/form/Form";
 
@@ -77,6 +77,7 @@ interface IForm {
 const LandingPage = () => {
   const [index, setIndex] = useState<number>(0);
   const [submitForm] = useForm();
+  const [api, contextHolder] = notification.useNotification();
 
   const onFinish = (values: IForm) => {
     emailjs
@@ -86,10 +87,16 @@ const LandingPage = () => {
           console.log("Email sent!", result.text);
 
           submitForm.resetFields();
-          message.success("Email sent successfully!");
+          api.success({
+            message: "Email sent successfully",
+            description: "Your messsage has been sent successfully",
+          });
         },
         () => {
-          message.error("Something went wrong, try again.");
+          api.error({
+            message: "Message not sent",
+            description: "Server error please contact the webiste admin",
+          });
         }
       );
   };
@@ -438,6 +445,7 @@ const LandingPage = () => {
                 lg={12}
                 className="w-100 flex justify-center"
               >
+                {contextHolder}
                 <div className="bg-black box-shadow flex w-75 justify-center p-2 pt-4 pb-4 m-1">
                   <Form
                     name="basic"
