@@ -419,6 +419,42 @@ const LandingPage = () => {
           </div>
         </section>
         <section about="contact">
+        <section>
+          <div className="pl-1 pr-1">
+            <div className="font-gaming font-20  mb-4">Links</div>
+            <div className="pl-1">
+              <ul className="font-12">
+                <li className="pb-1">
+                  <a
+                    href="https://colab.research.google.com/drive/1hqhbojPlZkWETzeyZN3Yb4dKa0TQ48o7"
+                    target="_blank"
+                    className="text-decoration-none text-white underline"
+                  >
+                    Machine learning - Gradute rate
+                  </a>
+                </li>
+                <li  className="pb-1">
+                  <a
+                    href="https://colab.research.google.com/drive/1f0Fk1C2pDFN_q6Rav3qfDcw_O0G8pn27"
+                    target="_blank"
+                    className="text-decoration-none text-white underline"
+                  >
+                    Machine learning - MARS vs AES
+                  </a>
+                </li>
+                <li  className="pb-1">
+                  <a
+                    href="https://zvoosh.github.io/vaco/"
+                    target="_blank"
+                    className="text-decoration-none text-white underline"
+                  >
+                    Unfinished photography website - Vaco
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
           <div className="pb-5 mt-5">
             <Row gutter={16}>
               <Col xs={24} md={12}>
@@ -523,7 +559,11 @@ const LandingPage = () => {
                       <TextArea rows={5} />
                     </Form.Item>
                     <Row justify={"end"}>
-                      <Button htmlType="submit" type="primary" className="bg-green">
+                      <Button
+                        htmlType="submit"
+                        type="primary"
+                        className="bg-green"
+                      >
                         Send
                       </Button>
                     </Row>
