@@ -523,7 +523,7 @@ const LandingPage = () => {
                       <TextArea rows={5} />
                     </Form.Item>
                     <Row justify={"end"}>
-                      <Button htmlType="submit" type="primary">
+                      <Button htmlType="submit" type="primary" className="bg-green">
                         Send
                       </Button>
                     </Row>
