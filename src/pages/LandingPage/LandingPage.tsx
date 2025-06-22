@@ -127,8 +127,8 @@ const LandingPage = () => {
             ))}
           </div>
         </section>
-        <section className="w-100 ">
-          <p className="font-gaming font-20 mb-5 hello-padding ">Portfolio</p>
+        <section className="w-100 mb-5">
+          <p className="font-gaming font-20 hello-padding ">Portfolio</p>
           <div className="card-grid">
             <div className="card">
               <img src={start} alt="" />
