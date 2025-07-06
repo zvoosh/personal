@@ -8,21 +8,20 @@ import image7 from "../../assets/viber_image_2025-07-06_18-19-18-553.jpg";
 
 const AboutMePage = () => {
   return (
-    <div className="w-100 h-100 flex justify-center">
+    <div className="w-100 flex justify-center" style={{height: "fit-content"}}>
       <div className="contactpage-cont mt-5">
-        <div className="flex"
-        >
-          <div className="w-100 h-100 mt-1 w-25">
+        <div className="intro-about-contiainter">
+          <div className="w-100 mt-1 mb-5">
             <img
               src={image}
               alt="portfolio image"
               className="w-100 h-100 cover"
             />
-            <p className="text-white mt-2 text-center font-11 font-space">
+            <p className="font-space under-image-title">
               Dušan Ilić Software Engineer
             </p>
           </div>
-          <div className="text-white font-space ml-5 w-75 font-12 line-height-18">
+          <div className="font-space line-height-18 about-me-cont">
             <h1 className="mb-1 font-30">About me</h1>
             <p className="mb-2">
               I'm an Informatics graduate with a deep passion for web
@@ -60,12 +59,12 @@ const AboutMePage = () => {
             </p>
           </div>
         </div>
-        <div className="w-100 h-100">
+        <div className="w-100">
           <div className="text-white font-20 font-space underline text-center">
             <p>Gallery</p>
           </div>
-          <div className="w-100 flex flex-column justify-center align-center pl-2 pr-2 pt-4 pb-4">
-            <div>
+          <div className="gallery-about-cont">
+            <div >
               <div className="p-1">
                 <img
                   src={image2}
@@ -109,43 +108,6 @@ const AboutMePage = () => {
                   alt="graduate"
                   className="w-100 h-100 cover"
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="w-100 flex justify-center text-white mt-5 pt-5 font-space">
-          <div className="p-5 flex justify-between w-100 font-30 mt-5">
-            <div className="mt-5">
-              <div className="pb-1 font-18">Follow me</div>
-              <div className="pl-4 pb-5">
-                <div className="font-16">
-                  <a
-                    href="https://github.com/zvoosh"
-                    target="_blank"
-                    className="text-decoration-none text-white"
-                  >
-                    Github
-                  </a>
-                </div>
-                <div className="font-16 pt-1 pb-1">
-                  <a
-                    href="https://www.linkedin.com/in/dusan-ilic-0997b4166/"
-                    target="_blank"
-                    className="text-decoration-none text-white"
-                  >
-                    Linkedin
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="mt-5">
-              <div className="pt-1 pb-1 font-18">Contact</div>
-              <div className="pb-5 ">
-                <div className="pb-1 pt-05 font-12">Belgrade, 11000</div>
-                <div className="pb-1 pt-05 font-12">+381603311223</div>
-                <div className="pb-1 pt-05 font-12">
-                  dusan.ilic1999@gmail.com
-                </div>
               </div>
             </div>
           </div>

@@ -60,7 +60,13 @@ const ContactPage = () => {
               </div>
             </div>
           </Col>
-          <Col xs={24} md={24} lg={12} className="w-100 h-50 flex justify-center">
+          <Col
+            xs={24}
+            md={24}
+            lg={12}
+            className="w-100 flex justify-center"
+            style={{ height: "fit-content" }}
+          >
             {contextHolder}
             <div className="bg-black box-shadow flex w-75 justify-center p-2 pt-4 pb-4 m-1">
               <Form
