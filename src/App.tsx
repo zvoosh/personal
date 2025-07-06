@@ -1,17 +1,12 @@
 import "./App.css";
 import "./styles/index.css";
-import { BrowserRouter, Route, Routes } from "react-router";
-import { RootLayout } from "./components";
-import { LandingPage } from "./pages";
+import { BrowserRouter } from "react-router";
+import AnimatedRoutes from "./routes/AnimatedRoutes";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<RootLayout />}>
-          <Route index element={<LandingPage />} />
-        </Route>
-      </Routes>
+      <AnimatedRoutes />
     </BrowserRouter>
   );
 }

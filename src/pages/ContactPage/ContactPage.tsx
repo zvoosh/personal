@@ -13,7 +13,7 @@ interface IForm {
   [key: string]: unknown;
 }
 
-const Contact = () => {
+const ContactPage = () => {
   const [submitForm] = useForm();
   const [api, contextHolder] = notification.useNotification();
 
@@ -39,9 +39,9 @@ const Contact = () => {
       );
   };
   return (
-    <section about="contact">
-      <div className="pb-5 mt-5">
-        <Row gutter={16}>
+    <section className="w-100 h-100 flex justify-center">
+      <div className="contactpage-cont">
+        <Row gutter={16} className="pb-5 mt-5 w-100 h-100 text-white">
           <Col xs={24} md={12}>
             <div className="m-1">
               <div className="font-30 w-75 pb-5">
@@ -60,7 +60,7 @@ const Contact = () => {
               </div>
             </div>
           </Col>
-          <Col xs={24} md={24} lg={12} className="w-100 flex justify-center">
+          <Col xs={24} md={24} lg={12} className="w-100 h-50 flex justify-center">
             {contextHolder}
             <div className="bg-black box-shadow flex w-75 justify-center p-2 pt-4 pb-4 m-1">
               <Form
@@ -146,4 +146,4 @@ const Contact = () => {
   );
 };
 
-export { Contact };
+export { ContactPage };
