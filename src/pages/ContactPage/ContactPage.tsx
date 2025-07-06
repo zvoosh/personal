@@ -41,7 +41,7 @@ const ContactPage = () => {
   return (
     <section className="w-100 h-100 flex justify-center">
       <div className="contactpage-cont">
-        <Row gutter={16} className="pb-5 mt-5 w-100 h-100 text-white">
+        <Row gutter={16} className="pb-5 mt-5 w-100 h-100 text-white" justify={'center'}>
           <Col xs={24} md={12}>
             <div className="m-1">
               <div className="font-30 w-75 pb-5">
@@ -60,13 +60,7 @@ const ContactPage = () => {
               </div>
             </div>
           </Col>
-          <Col
-            xs={24}
-            md={24}
-            lg={12}
-            className="w-100 flex justify-center"
-            style={{ height: "fit-content" }}
-          >
+          <Col xs={24} md={24} lg={12} className="w-100 flex justify-center" style={{height:"fit-content"}}>
             {contextHolder}
             <div className="bg-black box-shadow flex w-75 justify-center p-2 pt-4 pb-4 m-1">
               <Form

@@ -11,7 +11,7 @@ const LandingPage = () => {
         <Intro />
         <Skills />
         <Portfolio />
-        <div className="font-gaming font-20  mb-4 mt-3">About me</div>
+        <div className="font-gaming font-20 ml-2 mb-4 mt-3">About me</div>
         <Expiriance />
         <Cards />
       </div>

@@ -21,13 +21,10 @@ const RootLayout = () => {
       </div>
       {location.pathname !== "/contact" && (
         <div className="flex justify-center text-white font-space w-100">
-          <div
-            className="flex justify-around w-100 font-30"
-            style={{ maxWidth: "1300px" }}
-          >
+          <div className="font-30 footer-wrap">
             <div className="mt-5">
               <div className="pb-1 font-18">Follow me</div>
-              <div className="pl-4 pb-5">
+              <div>
                 <div className="font-16">
                   <a
                     href="https://github.com/zvoosh"
