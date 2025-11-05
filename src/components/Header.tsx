@@ -25,6 +25,13 @@ const Header = () => {
             about me
           </Link>
           <Link
+            to={"/projects"}
+            className="m-1 pointer text-white text-center"
+            style={{ textDecoration: "none" }}
+          >
+            projects
+          </Link>
+          <Link
             to={"/contact"}
             className="m-1 pointer text-white text-center"
             style={{ textDecoration: "none" }}
@@ -52,6 +59,9 @@ const Header = () => {
               </Link>
               <Link to={"/about"} className="ml-1 mr-1 pointer text-white">
                 about me
+              </Link>
+              <Link to={"/projects"} className="ml-1 mr-1 pointer text-white">
+                projects
               </Link>
               <Link to={"/contact"} className="ml-1 mr-1 pointer text-white">
                 contact

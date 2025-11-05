@@ -1,8 +1,6 @@
 import image from "../../assets/Dusan Ilic CV.jpeg";
 import image2 from "../../assets/portoflioimage.jpg";
 import image3 from "../../assets/viber_image_2025-07-06_18-19-18-316.jpg";
-import image4 from "../../assets/viber_image_2025-07-06_18-19-18-426.jpg";
-import image5 from "../../assets/viber_image_2025-07-06_18-19-18-458.jpg";
 import image6 from "../../assets/viber_image_2025-07-06_18-19-18-509.jpg";
 import image7 from "../../assets/viber_image_2025-07-06_18-19-18-553.jpg";
 
@@ -79,22 +77,8 @@ const AboutMePage = () => {
                   className="w-100 h-100 cover"
                 />
               </div>
-              <div className="p-1">
-                <img
-                  src={image4}
-                  alt="graduate"
-                  className="w-100 h-100 cover"
-                />
-              </div>
             </div>
             <div>
-              <div className="p-1">
-                <img
-                  src={image5}
-                  alt="graduate"
-                  className="w-100 h-100 cover"
-                />
-              </div>
               <div className="p-1">
                 <img
                   src={image6}
