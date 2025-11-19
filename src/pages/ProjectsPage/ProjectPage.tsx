@@ -1,5 +1,5 @@
 import project2 from "../../assets/Screenshot 2025-10-16 122531.png";
-import project3 from "../../assets/Screenshot 2025-10-16 115057.png";
+import project3 from "../../assets/Screenshot 2025-11-19 100035.png";
 import project1 from "../../assets/Screenshot 2025-11-03 190108.png";
 
 const ProjectsPage = () => {
@@ -22,7 +22,7 @@ const ProjectsPage = () => {
               />
               <h2 className="font-28 mb-1 font-gaming">Web Supermall</h2>
               <p className="mb-2 font-12">
-                A full-stack online store built with React, Next.js, and
+                A full-stack online store built with React, and
                 Node.js. Features secure authentication, product management, and
                 payment integration.
               </p>
@@ -43,9 +43,9 @@ const ProjectsPage = () => {
               />
               <h2 className="font-28 mb-1 font-gaming">Finance Tracker</h2>
               <p className="mb-2 font-12">
-                A playful browser game with animated pets, responsive UI, and
-                stat tracking. Built with React, custom hooks, and Framer
-                Motion.
+                A personal finance dashboard built with React. Users can monitor
+                spending habits, set budgets, and gain actionable insights into
+                their financial health.
               </p>
               <a
                 href="https://expensetrack.dusanprogram.eu"
@@ -63,15 +63,17 @@ const ProjectsPage = () => {
                 className="w-100 h-100 cover mb-2"
               />
               <h2 className="font-28 mb-1 font-gaming">
-                Student-Teacher Scheduler
+                Soil agent
               </h2>
               <p className="mb-2 font-12">
-                My personal portfolio showcasing projects, skills, and
-                experience. Built with React, Tailwind, and Ant Design for a
-                clean, responsive layout.
+                A full-stack soil-health tracker built with React, and
+                Node.js. It features secure authentication, interactive
+                dashboards for monitoring soil details and distributors and a responsive UI —
+                empowering users to explore, track, and understand long-term
+                soil quality trends.
               </p>
               <a
-                href="https://apointments.dusanprogram.eu"
+                href="https://soil.dusanprogram.eu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline-2 text-white"
