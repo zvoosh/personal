@@ -1,6 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom"; // ✅ use `react-router-dom`, not `react-router`
 import { AnimatePresence } from "framer-motion";
-import { ContactPage, LandingPage } from "../pages";
+import { ContactPage, LandingPage, ProjectsPage } from "../pages";
 import { RootLayout } from "../components";
 
 const AnimatedRoutes = () => {
@@ -11,6 +11,7 @@ const AnimatedRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<RootLayout />}>
           <Route index element={<LandingPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Route>
       </Routes>

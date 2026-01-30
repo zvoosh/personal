@@ -18,6 +18,13 @@ const Header = () => {
             home
           </Link>
           <Link
+            to={"/projects"}
+            className="m-1 pointer text-white text-center"
+            style={{ textDecoration: "none" }}
+          >
+            projects
+          </Link>
+          <Link
             to={"/contact"}
             className="m-1 pointer text-white text-center"
             style={{ textDecoration: "none" }}
@@ -42,6 +49,9 @@ const Header = () => {
             <div className="flex font-14 font-gaming user-none mobile-size-off">
               <Link to={"/"} className="ml-1 mr-1 pointer text-white">
                 home
+              </Link>
+              <Link to={"/projects"} className="ml-1 mr-1 pointer text-white">
+                projects
               </Link>
               <Link to={"/contact"} className="ml-1 mr-1 pointer text-white">
                 contact

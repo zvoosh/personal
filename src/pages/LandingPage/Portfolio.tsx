@@ -1,4 +1,5 @@
-import start from "../../assets/start.png";
+import start from "../../assets/pressOffice.png";
+import unifiedMentor from "../../assets/unifiedMentor.png";
 import office from "../../assets/office.jpg";
 import singidunum from "../../assets/singidunum.jpg";
 
@@ -8,25 +9,50 @@ const Portfolio = () => {
       <p className="font-gaming font-20 hello-padding ">Portfolio</p>
       <div className="card-grid">
         <div className="card">
-          <img src={start} alt="" />
+          <img
+            src={start}
+            alt="press Office"
+            style={{
+              objectFit: "cover",
+              width: "100%",
+              height: "100%",
+              filter: "blur(1px)",
+            }}
+          />
           <div className="overlay">
             <div className="p-1">
-              <p className="overlay-text bold">Vaco photo gallery</p>
-              <p className="overlay-text thin">React application</p>
+              <p className="overlay-text bold">Press Office</p>
+              <p className="overlay-text thin">
+                React Portfolio Website 30+ static pages
+              </p>
             </div>
           </div>
         </div>
         <div className="card">
-          <img src={office} alt="" />
+          <img
+            src={unifiedMentor}
+            alt="Unified mentor"
+            style={{
+              objectFit: "cover",
+              width: "100%",
+              height: "100%",
+              filter: "blur(1px)",
+            }}
+          />
           <div className="overlay">
             <div className="p-1">
-              <p className="overlay-text bold">Portfolio websites</p>
-              <p className="overlay-text thin">Wordpress</p>
+              <p className="overlay-text bold">Unified Mentor</p>
+              <p className="overlay-text thin">Internship</p>
             </div>
           </div>
         </div>
         <div className="card">
-          <img src={singidunum} alt="" />
+          <img src={singidunum} alt="Singidunum" style={{
+              objectFit: "cover",
+              width: "100%",
+              height: "100%",
+              filter: "blur(1px)",
+            }}/>
           <div className="overlay">
             <div className="p-1">
               <p className="overlay-text bold">10+ Practical Projects</p>
@@ -35,11 +61,16 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="card">
-          <img src={office} alt="" />
+          <img src={office} alt="Factory Group Office" style={{
+              objectFit: "cover",
+              width: "100%",
+              height: "100%",
+              filter: "blur(1px)",
+            }} />
           <div className="overlay">
             <div className="p-1">
               <p className="overlay-text bold">Front-end developer</p>
-              <p className="overlay-text thin">FactoryWW</p>
+              <p className="overlay-text thin">Factory Group</p>
             </div>
           </div>
         </div>
@@ -48,4 +79,4 @@ const Portfolio = () => {
   );
 };
 
-export {Portfolio}
+export { Portfolio };
