@@ -8,7 +8,7 @@ import appointment from "../../assets/appointment.png";
 const ProjectsPage = () => {
   return (
     <main style={{maxWidth:"100vw", padding: "24px", display: "flex", justifyContent: "center"}}>
-      <div className="container font-space">
+      <div className="container font-space text-white">
         <div className="project-grid">
             <a target="_blank" className="project-card" href="https://expensetrack.dusanprogram.eu/">
               <img src={expenseTrack} style={{objectFit: "contain"}}/>
