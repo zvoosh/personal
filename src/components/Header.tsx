@@ -18,13 +18,6 @@ const Header = () => {
             home
           </Link>
           <Link
-            to={"/projects"}
-            className="m-1 pointer text-white text-center"
-            style={{ textDecoration: "none" }}
-          >
-            projects
-          </Link>
-          <Link
             to={"/contact"}
             className="m-1 pointer text-white text-center"
             style={{ textDecoration: "none" }}
@@ -50,27 +43,24 @@ const Header = () => {
               <Link to={"/"} className="ml-1 mr-1 pointer text-white">
                 home
               </Link>
-              <Link to={"/projects"} className="ml-1 mr-1 pointer text-white">
-                projects
-              </Link>
               <Link to={"/contact"} className="ml-1 mr-1 pointer text-white">
                 contact
               </Link>
             </div>
-            <div>
+            <div className="flex items-center">
               <a
                 href="https://github.com/zvoosh"
                 className="text-white"
                 target="_blank"
               >
-                <FaGithub className="scale-15 mr-1" />
+                <FaGithub className="scale-150 mr-1" />
               </a>
               <a
                 href="https://www.linkedin.com/in/dusan-ilic-0997b4166/"
                 className="text-white"
                 target="_blank"
               >
-                <FaLinkedin className="scale-15" />
+                <FaLinkedin className="scale-150" />
               </a>
             </div>
           </div>

@@ -13,56 +13,56 @@ import { SkillCard } from "../../components";
 
 const skillData = [
   {
-    icon: <FaReact className="scale-15" />,
+    icon: <FaReact className="" />,
     title: "React",
   },
   {
-    icon: <FaAngular className="scale-15" />,
+    icon: <FaAngular className="" />,
     title: "Angular",
   },
   {
-    icon: <RiNextjsFill className="scale-15" />,
+    icon: <RiNextjsFill className="" />,
     title: "NextJs",
   },
   {
-    icon: <BiLogoFlask className="scale-15" />,
+    icon: <BiLogoFlask className="" />,
     title: "Flask",
   },
   {
-    icon: <FaNodeJs className="scale-15" />,
+    icon: <FaNodeJs className="" />,
     title: "NodeJs",
   },
   {
-    icon: <FaPython className="scale-15" />,
+    icon: <FaPython className="" />,
     title: "Python",
   },
   {
-    icon: <FaJava className="scale-15" />,
+    icon: <FaJava className="" />,
     title: "Java",
   },
   {
-    icon: <SiTypescript className="scale-15" />,
+    icon: <SiTypescript className="" />,
     title: "TypeScript",
   },
   {
-    icon: <SiJavascript className="scale-15" />,
+    icon: <SiJavascript className="" />,
     title: "JavaScript",
   },
   {
-    icon: <FaWordpress className="scale-15" />,
+    icon: <FaWordpress className="" />,
     title: "WordPress",
   },
 ];
 const Skills = () => {
   return (
-    <section className="w-100 pb-5 hello-padding">
+    <section className="w-full pb-5 hello-padding">
       <div className="font-gaming font-20 ">Skills</div>
       <div
         className="mt-5"
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit,minmax(200px, 1fr))",
-          gap: "30px",
+          gap: "50px",
         }}
       >
         {skillData.map((values, index) => (
