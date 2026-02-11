@@ -45,7 +45,7 @@ const Contact = () => {
           <Col xs={24} md={12}>
             <div className="m-1">
               <div className="font-30 w-75 pb-5">
-                Let's build amazing things thogether
+                Let's build amazing things together
               </div>
               <div>
                 <div>
