@@ -25,3 +25,10 @@
   background: gray;
   border-radius: 3px; /* Smooth edges */
 }
+.ant-card {
+  transition: transform 0.3s ease;
+}
+
+.ant-card:hover {
+  transform: scale(1.03);
+}

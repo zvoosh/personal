@@ -9,9 +9,7 @@ import anotherPortfolio from "../../assets/another-portfolio.png";
 import mypetlite from "../../assets/mypetlite.png";
 import supermall from "../../assets/supermall3.png";
 import recipes from "../../assets/recipes.png";
-import appointment from "../../assets/appointment.png";
-import { useState } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Carousel from "../../components";
 const cards = [
   { img: pressOffice, title: "Press Office 2026", textColor: "text-white" },
   { img: expenseTrack, title: "Expense Tracker", textColor: "text-black" },
@@ -27,24 +25,8 @@ const cards = [
     textColor: "text-black",
   },
   { img: recipes, title: "Explore Recipes", textColor: "text-black" },
-  {
-    img: appointment,
-    title: "Appointment Booking Application",
-    textColor: "text-white",
-  },
 ];
-
 const LandingPage = () => {
-  const [current, setCurrent] = useState(0);
-
-  const nextSlide = () => {
-    setCurrent((prev) => (prev + 1) % cards.length);
-  };
-
-  const prevSlide = () => {
-    setCurrent((prev) => (prev - 1 + cards.length) % cards.length);
-  };
-
   return (
     <main className="w-100 h-100 flex justify-center text-white font-space">
       <div className="container">
@@ -79,43 +61,7 @@ const LandingPage = () => {
         <div className="font-gaming font-20 mb-1 mt-1 hello-padding">
           Projects
         </div>
-        <section className="w-screen relative overflow-hidden px-10">
-          <div
-            className="flex transition-transform duration-500"
-            style={{ transform: `translateX(-${current * 100}%)` }}
-          >
-            {cards.map((card, index) => (
-              <div key={index} className="w-full flex-shrink-0 p-1 md:p-5">
-                <div className="w-full h-full relative hover:scale-103 transition-transform duration-300">
-                  <img
-                    src={card.img}
-                    style={{ objectFit: "contain" }}
-                    className="rounded-2xl h-full w-full"
-                  />
-                  <p
-                    className={`absolute bottom-0 ${card.textColor} bg-gray-100-800/20 backdrop-blur-xl left-0 right-0 text-center md:text-2xl md:py-5 rounded-b-2xl`}
-                  >
-                    {card.title}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Kontrole */}
-          <button
-            onClick={prevSlide}
-            className="absolute top-1/2 left-2 -translate-y-1/2 text-white !px-3 !py-3 rounded-xl text-center cursor-pointer bg-gray-800/20 backdrop-blur-3xl"
-          >
-            <FaChevronLeft />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute top-1/2 right-2 -translate-y-1/2 text-white !px-3 !py-3 rounded-xl text-center cursor-pointer bg-gray-800/20 backdrop-blur-3xl"
-          >
-            <FaChevronRight />
-          </button>
-        </section>
+        <Carousel cards={cards} />
       </div>
     </main>
   );
