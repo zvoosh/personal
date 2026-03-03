@@ -3,14 +3,48 @@ import { Portfolio } from "./Portfolio";
 import { Expiriance } from "./Expiriance";
 import { Intro } from "./Intro";
 import start from "../../assets/startsoil.png";
+import pressOffice from "../../assets/press-office.png";
 import expenseTrack from "../../assets/expenseTrack.png";
 import anotherPortfolio from "../../assets/another-portfolio.png";
 import mypetlite from "../../assets/mypetlite.png";
 import supermall from "../../assets/supermall3.png";
 import recipes from "../../assets/recipes.png";
 import appointment from "../../assets/appointment.png";
+import { useState } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+const cards = [
+  { img: pressOffice, title: "Press Office 2026", textColor: "text-white" },
+  { img: expenseTrack, title: "Expense Tracker", textColor: "text-black" },
+  {
+    img: anotherPortfolio,
+    title: "Another Portfolio",
+    textColor: "text-white",
+  },
+  { img: mypetlite, title: "My pet lite", textColor: "text-white" },
+  {
+    img: supermall,
+    title: "Supermall Fullstack Application",
+    textColor: "text-black",
+  },
+  { img: recipes, title: "Explore Recipes", textColor: "text-black" },
+  {
+    img: appointment,
+    title: "Appointment Booking Application",
+    textColor: "text-white",
+  },
+];
 
 const LandingPage = () => {
+  const [current, setCurrent] = useState(0);
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % cards.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev - 1 + cards.length) % cards.length);
+  };
+
   return (
     <main className="w-100 h-100 flex justify-center text-white font-space">
       <div className="container">
@@ -20,21 +54,24 @@ const LandingPage = () => {
         <div className="font-gaming font-20 mb-1 mt-1 hello-padding">
           About me
         </div>
-        <div className="flex flex-col md:!flex-row items-center gap-10 w-full mb-5 ">
-          <div className="w-[300px] md:w-full">
+        <div className="flex flex-col md:!flex-row items-center gap-10 w-full  px-7 mb-5 ">
+          <div className="flex-1 max-w-sm md:max-w-md  xl:max-w-2xl">
             <img
               src={start}
               alt="Profile"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-xl shadow-lg"
             />
           </div>
-          <div>
-            <p className="text-lg font-space mb-2 w-[300px] md:w-[500px]">
-              I am a graduated informatics student with over a year of
+
+          {/* Tekst */}
+          <div className="flex-1">
+            <p className="text-lg font-space mb-2 md:max-w-lg xl:max-w-2xl leading-relaxed">
+              I am a graduated informatics student with two years of
               professional experience in web development. Other than my
-              professional experience, I code for fun and learning, which I find
-              very rewarding. I am a quick learner, and I am always looking for
-              new challenges and opportunities to grow as a developer.
+              professional experience, I code for fun and learn everyday, which
+              I find very rewarding. I am a quick learner, and I am always
+              looking for new challenges and opportunities to grow as a
+              developer.
             </p>
           </div>
         </div>
@@ -42,72 +79,43 @@ const LandingPage = () => {
         <div className="font-gaming font-20 mb-1 mt-1 hello-padding">
           Projects
         </div>
-        <main className="w-full hello-padding">
-          <div className="w-full">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 ">
-              <a
-                target="_blank"
-                className="w-full h-full relative hover:scale-105 transition-transform duration-300"
-                href="https://expensetrack.dusanprogram.eu/"
-              >
-                <img src={expenseTrack} style={{ objectFit: "contain" }} />
-                <p className="absolute bottom-0 text-black bg-gray-200/20 backdrop-blur-sm left-0 right-0 text-center text-lg">
-                  Expense Tracker
-                </p>
-              </a>
-              <a
-                target="_blank"
-                className="w-full h-full relative hover:scale-105 transition-transform duration-300"
-                href="https://portfolio.dusanprogram.eu/"
-              >
-                <img src={anotherPortfolio} style={{ objectFit: "contain" }} />
-                <p className="absolute bottom-0 text-black bg-gray-200/20 backdrop-blur-sm left-0 right-0 text-center text-lg">
-                  Another Portfolio
-                </p>
-              </a>
-              <a
-                target="_blank"
-                className="w-full h-full relative hover:scale-105 transition-transform duration-300"
-                href="https://mypetlite.dusanprogram.eu/"
-              >
-                <img src={mypetlite} style={{ objectFit: "contain" }} />
-                <p className="absolute bottom-0 text-black bg-gray-200/20 backdrop-blur-sm left-0 right-0 text-center text-lg">
-                  My pet lite
-                </p>
-              </a>
-              <a
-                target="_blank"
-                className="w-full h-full relative hover:scale-105 transition-transform duration-300"
-                href="https://supermall.dusanprogram.eu/"
-              >
-                <img src={supermall} style={{ objectFit: "contain" }} />
-                <p className="absolute bottom-0 text-black bg-gray-200/20 backdrop-blur-sm left-0 right-0 text-center text-lg">
-                  Supermall Fullstack Application
-                </p>
-              </a>
-              <a
-                target="_blank"
-                className="w-full h-full relative hover:scale-105 transition-transform duration-300"
-                href="https://recipes.dusanprogram.eu/"
-              >
-                <img src={recipes} style={{ objectFit: "contain" }} />
-                <p className="absolute bottom-0 text-black bg-gray-200/20 backdrop-blur-sm left-0 right-0 text-center text-lg">
-                  Explore Recipes
-                </p>
-              </a>
-              <a
-                target="_blank"
-                className="w-full h-full relative hover:scale-105 transition-transform duration-300"
-                href="https://apointments.dusanprogram.eu/page/home"
-              >
-                <img src={appointment} style={{ objectFit: "contain" }} />
-                <p className="absolute bottom-0 text-black bg-gray-200/20 backdrop-blur-sm left-0 right-0 text-center text-lg">
-                  Appointment Booking Application
-                </p>
-              </a>
-            </div>
+        <section className="w-screen relative overflow-hidden px-10">
+          <div
+            className="flex transition-transform duration-500"
+            style={{ transform: `translateX(-${current * 100}%)` }}
+          >
+            {cards.map((card, index) => (
+              <div key={index} className="w-full flex-shrink-0 p-1 md:p-5">
+                <div className="w-full h-full relative hover:scale-103 transition-transform duration-300">
+                  <img
+                    src={card.img}
+                    style={{ objectFit: "contain" }}
+                    className="rounded-2xl h-full w-full"
+                  />
+                  <p
+                    className={`absolute bottom-0 ${card.textColor} bg-gray-100-800/20 backdrop-blur-xl left-0 right-0 text-center md:text-2xl md:py-5 rounded-b-2xl`}
+                  >
+                    {card.title}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
-        </main>
+
+          {/* Kontrole */}
+          <button
+            onClick={prevSlide}
+            className="absolute top-1/2 left-2 -translate-y-1/2 text-white !px-3 !py-3 rounded-xl text-center cursor-pointer bg-gray-800/20 backdrop-blur-3xl"
+          >
+            <FaChevronLeft />
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute top-1/2 right-2 -translate-y-1/2 text-white !px-3 !py-3 rounded-xl text-center cursor-pointer bg-gray-800/20 backdrop-blur-3xl"
+          >
+            <FaChevronRight />
+          </button>
+        </section>
       </div>
     </main>
   );
